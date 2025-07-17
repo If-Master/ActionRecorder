@@ -17,11 +17,9 @@ public class ChatScreenMixin {
 
     @Inject(method = "keyPressed", at = @At("HEAD"))
     private void onKeyPressed(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
-        // Check if Enter key was pressed (keyCode 257 is Enter)
         if (keyCode == 257) {
             String message = chatField.getText();
             if (message != null && !message.trim().isEmpty()) {
-                // Capture the chat message
                 ActionrecorderClient client = ActionrecorderClient.getInstance();
                 if (client != null) {
                     client.onChatMessageSent(message);
