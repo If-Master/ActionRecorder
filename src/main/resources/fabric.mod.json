@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "actionrecorder",
+  "version": "${version}",
+  "name": "Action Recorder",
+  "description": "A mod that records and replays player actions",
+  "authors": [
+    "Kanuunankuula [If_Master]"
+  ],
+  "contact": {
+    "homepage": "https://github.com/If-Master/ActionRecorder?tab=readme-ov-file",
+    "sources": "https://github.com/If-Master/ActionRecorder?tab=readme-ov-file"
+  },
+  "license": "AGPLv3",
+  "icon": "assets/actionrecorder/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.kanuunankuulaspluginsMobs.actionrecorder.client.ActionrecorderClient"
+    ],
+    "modmenu": [
+      "me.kanuunankuulaspluginsMobs.actionrecorder.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "actionrecorder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

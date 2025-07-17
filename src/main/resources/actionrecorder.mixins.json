@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.kanuunankuulaspluginsMobs.actionrecorder.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "actionrecorder.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.kanuunankuulaspluginsMobs.actionrecorder.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MouseAccessor",
+    "MinecraftClientMixin",
+    "ChatScreenMixin",
+    "ChatScreenAccessor"
+  ],
+  "client": [
+    "MouseAccessor",
+    "MinecraftClientMixin",
+    "ChatScreenMixin",
+    "ChatScreenAccessor",
+    "ClientPlayNetworkHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

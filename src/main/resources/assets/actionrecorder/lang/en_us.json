@@ -1,0 +1,6 @@
+{
+  "key.actionrecorder.record_toggle": "Toggle Recording",
+  "key.actionrecorder.playback_toggle": "Toggle Playback",
+  "key.actionrecorder.enable_toggle": "Toggle Action Recorder",
+  "category.actionrecorder.general": "Action Recorder"
+}
