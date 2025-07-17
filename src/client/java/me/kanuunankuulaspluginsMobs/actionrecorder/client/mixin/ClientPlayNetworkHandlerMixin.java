@@ -12,7 +12,6 @@ public class ClientPlayNetworkHandlerMixin {
 
     @Inject(method = "sendChatMessage", at = @At("HEAD"))
     private void onSendChatMessage(String message, CallbackInfo ci) {
-        // Capture the chat message when it's sent via network
         ActionrecorderClient client = ActionrecorderClient.getInstance();
         if (client != null) {
             client.onChatMessageSent(message);
